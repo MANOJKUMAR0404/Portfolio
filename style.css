@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins" !important;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #e3dfdc;
+}
+
+#main {
+    position: relative;
+    overflow: hidden;
+}
+
+#page{
+    position: relative;
+    height: 700vh !important;
+    width: 100vw;
+    background-color: #e3dfdc;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    all: unset;
+    text-decoration: none;
+}
+
+nav{
+    position: sticky !important;
+    color: rgb(4, 4, 68);
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.70rem;
+    align-items: center;
+}
+
+nav .items:first-child{
+    font-size: 3rem;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px auto;
+    padding: 15px;
+    color: rgb(4, 4, 68);
+    z-index: 10;
+    width: 80%;
+    height: 400px;
+    margin-bottom: 0px;
+}
+
+.home img{
+    position: relative;
+    width: 580px;
+    height: 450px;
+    top: -300px;
+    left: 180px;
+    margin-bottom: 0px;
+}
+.home .gradient{
+    position: relative;
+    top:450px;
+    left:30px;
+    font-size: 4rem;
+    margin-bottom: 0px;
+}
+
+.hand{
+    position: relative !important;
+    width: 80px !important;
+    height: 80px !important;
+    top: 355px !important;
+    left: 210px !important;
+    /* border: 1px solid black; */
+    animation: tilt 2.8s infinite;
+    color:#EAC452;
+}
+
+
+
+@keyframes tilt {
+    0%{
+        rotate: 0.0deg;
+    }
+    10%{
+        rotate: 14.0deg;
+    }
+    20%{
+        rotate: -8.0deg;
+    }
+    30%{
+        rotate: 14.0deg;
+    }
+    40%{
+        rotate: -4.0deg;
+    }
+    50%{
+        rotate: 10.0deg;
+    }
+    60%{
+        rotate: 0.0deg;
+    }
+    100%{
+        rotate: 0.0deg;
+    }
+}
+
+.outerheading{
+    position: relative;
+    top: 380px;
+    left: 34px;
+    font-size: 1rem;
+}
+
+.innerheading{
+    /* border: 1px solid; */
+    width: 900px;
+    height: 70px;
+    font-weight: 600;
+    overflow: hidden;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+}
+
+.innerheading span{
+    width: 100%;
+    position: relative;
+    color: crimson;
+    animation: scrollauto 12s ease infinite;
+}
+
+@keyframes scrollauto {
+    0%{
+        top: 0;
+    }
+    20%{
+        top: 0;
+    }
+    25%{
+        top: -70px;
+    }
+    45%{
+        top: -70px;
+    }
+    50%{
+        top: -155px;
+    }
+    70%{
+        top: -155px;
+    }
+    75%{
+        top: -230px;
+    }
+    95%{
+        top: -230px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+
+.about{
+    position: relative;
+    top: 500px;
+    left: -240px;
+    width: 1000px;
+    height: 650px;
+    border-radius: 20px;
+    padding: 30px;
+    background-color:#cfccc9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about .aboutme{
+    margin-left: 80px;
+    font-size: 2.5rem;
+}
+
+.about .butterfly{
+    position:relative;
+    top: -130px;
+    left: -120px;
+    width: 150px;
+    height: 150px;
+    transform: rotate(25deg);
+}
+
+.about .content{
+    position: relative;
+    top: -170px;
+    margin:50px 0px 0px 0px;
+    font-size: 1.55rem;
+    text-align:justify;
+}
+
+.education{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    height: 600px;
+    /* border: 1px solid; */
+    top: 200vh;
+    left: -290px;
+    z-index: 99999;
+}
+
+canvas {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9;
+}
+
+.rounded{
+    position:relative;
+    left: 60%;
+    width: 360px;
+    height: 360px;
+    /* background:rgb(4, 4, 68); */
+    /* border: 1px solid; */
+}
+
+.blob{
+    filter: blur(3px);
+}
+
+
+/* From Uiverse.io by alexruix */ 
+.card {
+    width: 330px;
+    height: 454px;
+    border-radius: 20px;
+    position: relative;
+    padding: 30px;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    background: #eeeeec;
+   }
+   
+   .card-details {
+    color: rgb(4, 4, 68);
+    height: 100%;
+    position: relative;
+    top: -30px;
+   }
+
+   .card-details li{
+    list-style:outside;
+   }
+
+   
+   .text-body {
+    margin-top: 20px;
+    text-align:left;
+    color: rgb(134, 134, 134);
+   }
+   
+   /*Text*/
+   .text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    top: 10px;
+   }
+
+.education_img{
+    margin: 0;
+    top: 5px !important;
+    left: -5px !important;
+    width: 50px !important;
+    height: 55px !important;
+   }
+   
+   /*Hover*/
+   .card:hover {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+   }
+
+
+   .card .mar{
+    margin-top: 25px;
+   }
+
+   .card .skills{
+    list-style:none;
+   }
+   .skills{
+    margin-left: 10px;
+    font-size: 10px;
+   }
+
+   
+   .two{
+    position: absolute;
+    top: 10px !important;
+    width: 60px !important;
+    height: 50px !important;
+   }
+
+.containertwo{
+    width: 1200px;
+    height: 650px;
+    /* border: 1px solid black; */
+    color: rgb(4, 4, 68);
+    position: relative;
+    top: -680px;
+    z-index: 999;
+    left: 6%;
+}
+
+.containertwo .card{
+    left: 50px;
+}
+
+.containertwo .heigher{
+    width: 350px;
+    height: 630px;
+    background: white;
+}
+
+
+.card .red {
+    background-color: #f43f5e;
+  }
+  
+  .card .blue {
+    background-color: #3b82f6;
+  }
+  
+  .card .green {
+    background-color: #22c55e;
+  }
+  
+  .card .cardtwo {
+    margin-top: 20px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    border-radius: 10px;
+    /* color: white; */
+    cursor: pointer;
+    transition: 400ms;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  
+  .card .cardtwo p.tip {
+    top: 0px;
+    font-size: 1em;
+    font-weight: 700;
+  }
+  
+  .card .cardtwo:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .card:hover > .cardtwo:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+  }
+
+#projectimg{
+    position: absolute;
+    top: 20px !important;
+    left: 160px !important;
+}
+
+#projectimg2{
+    position: absolute;
+    top: 20px !important;
+    left: 215px !important;
+    width: 70px !important;
+}
+
+  .gemi{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  #plottwo{
+    position: absolute !important;
+    left: 800px;
+    top: 0px;
+    width: 350px;
+    height: 630px;
+    background: white;
+  }
+
+  .skillcontain{
+    position: relative;
+    top: 15%;
+    left: -7%;
+    z-index: 999;
+    width:1380px;
+    height: 450px;
+    /* background: black; */
+    /* border: 1px solid; */
+  }
+
+
+  .slider{
+    height: 250px;
+    margin:auto;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track{
+    display: flex;
+    width: calc(250px * 18);
+    animation: scroll 40s linear infinite;
+}
+
+.slide-track:hover{
+    animation-play-state: paused;
+}
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 9));
+    }
+}
+
+.slide{ 
+    height: 300px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+    object-fit:cover;
+    /* border: 1px solid; */
+}
+
+img{
+    width: 100%;
+    height: 65%;
+    border-radius: 10px;
+    transition: 0.4s linear;
+}
+img:hover{
+    transform: translateZ(20px);
+}
+
+.slider::before,
+.slider::after{
+    /* background: linear-gradient(to right,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%) !important; */
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.slider::before{
+    left: 0;
+    right: 0;
+}
+
+.slider::after{
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+center h1{
+    font-size: 3rem;
+}
+
+.contact{
+    color: rgb(4, 4, 68);
+    position: relative;
+    top: -100px;
+    /* border: 1px solid; */
+    height: 600px;
+}
+
+/* From Uiverse.io by ClawHack1 */ 
+.contact-form {
+    margin-top: 60px;
+    background-color:#cfccc9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 950px;
+    height: 450px;
+  }
+  
+  .contact-form label {
+    color: rgb(4, 4, 68);
+  }
+  
+  .contact-form .heading {
+    font-size: 24px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    position: relative;
+    left: 230px;
+    resize: none;
+    height: 80px;
+    width: 50%;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    position: relative;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 50%;
+    left: 230px;
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ff6384;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .contact-form button[type="submit"] {
+    background-color: #ff6384;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    width: 50%;
+    top: 20px;
+    left: 230px;
+  }
+  
+  .contact-form button[type="submit"]:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+
+
+
+
+/* 
+
+
+@media screen and (max-width:400px) {
+
+    canvas{
+        display: none;
+    }
+    .home h1{
+        font-size: 30px;
+        left: -50px;
+        top: -15px;
+    }
+
+    .home img{
+        position: relative;
+        top: -50px;
+        left: 0px;
+        width: 250px;
+        height: 200px;
+    }
+
+    nav{
+        display: none;
+        position: fixed;
+        flex-direction: column;
+
+    }
+}
+
+
+ */
