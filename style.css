@@ -612,3 +612,158 @@ center h1{
 
 
  */
+
+@media screen and (max-width:400px) {
+
+    canvas{
+        display: none !important;
+    }
+    .home h1{
+        position: relative;
+        font-size: 30px !important;
+        left: 280px !important;
+        top: 540px !important;
+    }
+
+    .home img{
+        position: relative;
+        top: -230px;
+        left: 340px;
+        width: 250px;
+        height: 200px;
+    }
+
+    .outerheading h1{
+        font-size: 20px !important;
+        position: relative;
+        top: 120px !important;
+        left: 248px !important;
+    }
+
+    .hand{
+        position: relative;
+        top: 490px !important;
+        left: 360px !important;
+        width: 50px !important;
+        height: 40px !important;
+    }
+
+    .blob{
+        display: none;
+    }
+
+    .innerheading{
+        position: relative !important;
+        font-size: 20px;
+        top: 130px !important;
+        left: 248px !important;
+        height: 25px;
+    }
+
+    .innerheading span{
+        animation: scrollauto2 12s linear infinite !important;
+    }
+    @keyframes scrollauto2 {
+        0%{
+            top: 0;
+        }
+        20%{
+            top: 0;
+        }
+        25%{
+            top:-35px;
+        }
+        45%{
+            top: -35px;
+        }
+        50%{
+            top: -65px;
+        }
+        70%{
+            top: -65px;
+        }
+        75%{
+            top: -90px;
+        }
+        95%{
+            top: -90px;
+        }
+        100%{
+            top: 0px;
+        }
+    }
+
+
+    nav{
+        display: none;
+        position: fixed;
+        flex-direction: column;
+    }
+
+    .about{
+        position: relative;
+        top: 580px;
+        left: 140px;
+        width: 370px !important;
+        height: 820px;
+        border-radius: 20px;
+        padding: 30px;
+        background-color:#cfccc9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .about .aboutme{
+        margin-left: 60px !important;
+        font-size: 1.2rem;
+    }
+    
+    .about .butterfly{
+        position:relative;
+        top: -96px;
+        left: -100px;
+        width: 120px;
+        height: 120px;
+        transform: rotate(25deg);
+    }
+    
+    .about .content{
+        position: relative;
+        top: -170px;
+        margin:50px 0px 0px 0px;
+        font-size: 1.10rem;
+        text-align:justify;
+    }
+
+    .education{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: space-between;
+        width: 340px;
+        height: 600px;
+        /* border: 1px solid; */
+        top: 630px;
+        left: 160px;
+        z-index: 99999;
+    }
+
+
+
+    .contact{
+        top: 400vh;
+    }
+
+    .skillcontain{
+        top: 400vh;
+    }
+
+
+    .heigher{
+        top: 375vh;
+        width: 340px !important;
+        left: 5px !important;
+    }
+}
+
+
