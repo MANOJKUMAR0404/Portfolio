@@ -20,7 +20,7 @@ html, body {
 
 #page{
     position: relative;
-    height: 700vh !important;
+    height: 730vh !important;
     width: 100vw;
     background-color: #e3dfdc;
 }
@@ -32,22 +32,26 @@ li{
 a{
     all: unset;
     text-decoration: none;
+    cursor: pointer;
 }
 
 nav{
-    position: sticky !important;
-    color: rgb(4, 4, 68);
-    width: 70%;
-    margin: 50px auto;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.70rem;
-    align-items: center;
+    position: relative;
+    /* border: 1px solid; */
+    height: 100px;
+    padding: 25px;
 }
 
-nav .items:first-child{
-    font-size: 3rem;
+.items{
+    visibility: hidden;
 }
+
+.titlename{
+    margin-left: 150px;
+    font-size: 2rem !important;
+    color: rgb(4, 4, 68);
+}
+
 
 .home{
     display: flex;
@@ -499,17 +503,17 @@ center h1{
     position: relative;
     top: -100px;
     /* border: 1px solid; */
-    height: 600px;
+    height: 650px;
 }
 
-/* From Uiverse.io by ClawHack1 */ 
+
 .contact-form {
     margin-top: 60px;
     background-color:#cfccc9;
     padding: 20px;
     border-radius: 10px;
     width: 950px;
-    height: 450px;
+    height: 560px;
   }
   
   .contact-form label {
@@ -575,59 +579,112 @@ center h1{
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
   }
+
+
+.card-contact{
+    border-radius: 20px;
+    width: 35%;
+    height: fit-content;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 45px;
+    padding: 25px 25px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+    width: 40px;
+    height: 50px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 1.2s;
+    border-radius: 15px 0 15px 0px;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: 1.2s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: 1.2s;
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: 1.2s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #f90101;
+    transition-duration: 1.2s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: 1.2s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 1.2s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
   
 
 
-
-
-/* 
-
-
 @media screen and (max-width:400px) {
 
-    canvas{
-        display: none;
+    #page{
+        border: 1px solid black !important;
     }
-    .home h1{
-        font-size: 30px;
-        left: -50px;
-        top: -15px;
-    }
-
-    .home img{
-        position: relative;
-        top: -50px;
-        left: 0px;
-        width: 250px;
-        height: 200px;
-    }
-
-    nav{
-        display: none;
-        position: fixed;
-        flex-direction: column;
-
-    }
-}
-
-
- */
-
-@media screen and (max-width:400px) {
-
     canvas{
         display: none !important;
     }
+
+    .titlename{
+        margin-left: 30%;
+    }
+    /* .items{
+        visibility: visible;
+    } */
     .home h1{
         position: relative;
         font-size: 30px !important;
         left: 280px !important;
-        top: 540px !important;
+        top: 680px !important;
     }
 
     .home img{
         position: relative;
-        top: -230px;
+        top: -242px;
         left: 340px;
         width: 250px;
         height: 200px;
@@ -636,26 +693,30 @@ center h1{
     .outerheading h1{
         font-size: 20px !important;
         position: relative;
-        top: 120px !important;
+        top: 270px !important;
         left: 248px !important;
     }
 
     .hand{
         position: relative;
-        top: 490px !important;
+        top: 630px !important;
         left: 360px !important;
         width: 50px !important;
         height: 40px !important;
     }
 
     .blob{
-        display: none;
+        position: relative;
+        width: 300px;
+        top: -20px !important;
+        left: -100px !important;
+        filter: blur(13px);       
     }
 
     .innerheading{
         position: relative !important;
         font-size: 20px;
-        top: 130px !important;
+        top: 290px !important;
         left: 248px !important;
         height: 25px;
     }
@@ -694,15 +755,9 @@ center h1{
     }
 
 
-    nav{
-        display: none;
-        position: fixed;
-        flex-direction: column;
-    }
-
     .about{
         position: relative;
-        top: 580px;
+        top: 780px;
         left: 140px;
         width: 370px !important;
         height: 820px;
@@ -738,32 +793,133 @@ center h1{
         position: relative;
         display: flex;
         flex-direction: column;
-        gap: 3rem;
         justify-content: space-between;
-        width: 340px;
-        height: 600px;
+        width: 370px;
+        height: 950px;
         /* border: 1px solid; */
-        top: 630px;
-        left: 160px;
+        top: 890px !important;
+        left: 140px;
         z-index: 99999;
+        margin-bottom: 0;
     }
 
-
-
-    .contact{
-        top: 400vh;
+    .containertwo{
+        position: relative;
+        top: 205vh;
+        margin-left: 35px;
+        /* border: 1px solid; */
+        width: 370px !important;
+        left: -25px !important;
+        height: 160vh;
     }
 
-    .skillcontain{
-        top: 400vh;
+    .card{
+        width: 350px;
+        left: 2.5%;
     }
-
 
     .heigher{
-        top: 375vh;
-        width: 340px !important;
-        left: 5px !important;
+        position: absolute;
+        top: 0 !important;
+        left: 1.2% !important;
+        width: 360px !important;
     }
+
+    #plottwo{
+        position: absolute !important;
+        top: 700px;
+        left: 1.5%;
+        width: 360px;
+        height: 630px;
+        background: white;
+      }
+
+    .skillcontain{
+        top: 175vh;
+        height:500px;
+        width: 410px;
+        /* border: 1px solid; */
+    }
+
+    .contact{
+        top: 280vh;
+        /* border: 1px solid; */
+        width: 400px !important;
+        height: 700px;
+    }
+
+    .contact-form{
+        position: relative;
+        left: 0px;
+        width: 350px !important;
+        height: 550px;
+    }
+
+    
+  .contact-form .heading {
+    font-size: 24px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    position: relative;
+    left:0px !important;
+    resize: none;
+    height: 80px;
+    width: 100% !important;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    position: relative;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    left: 0px;
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ff6384;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .contact-form button[type="submit"] {
+    background-color: #ff6384;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    width: 50%;
+    top: 20px;
+    left: 25%;
+  }
+  
+  .contact-form button[type="submit"]:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .card-contact{
+    display: none;
+  }
+
+    
+    
 }
-
-
